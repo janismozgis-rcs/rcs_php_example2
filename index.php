@@ -1,11 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "password";
-$dbname = "web_kurss_02_10";
-
-$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-
+include_once 'db.php';
 
 include_once 'components/header.php';
 $page = isset($_GET['page']) ? $_GET['page'] : 0;
